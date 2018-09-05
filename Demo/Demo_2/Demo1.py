@@ -1,0 +1,6 @@
+f = open('1.txt','r+')
+f.write('111')
+f.write('222')
+f.write('333')
+f.write('444')
+f.close()
