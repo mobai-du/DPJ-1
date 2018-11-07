@@ -25,6 +25,8 @@ with open("information.txt",'r+') as f:
     4 退出
     '''
 # print(type(date))
+
+
 def find_date():
     while True:
         userdate = input("查询>>>")
@@ -37,6 +39,7 @@ def find_date():
             print(info)
             break
 # find_date()
+
 
 def add_date(*arg,**kwargs):
     print("格式：num,name,age,phone,job,time")
@@ -63,6 +66,8 @@ def del_date():
         if user_date_1 == 'q':
             print(info)
             break
+
+
 # del_date()
 def mod_date():
     while True:
@@ -190,5 +195,6 @@ def managament():
             mod_date()
         elif choose == '4':
             exit()
+
 
 managament()

@@ -48,10 +48,12 @@ while True:
         choose = input("请选择，输入b返回上一级菜单，输入q退出菜单:").strip()
         if choose in menu:
             parent_layer.append(menu)
+            print(parent_layer)
             menu = menu[choose]
         elif choose == 'b':
             if parent_layer:
                 menu = parent_layer.pop()
+                print(parent_layer)
         elif choose == 'q':
             exit()
         else:
